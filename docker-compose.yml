@@ -1,0 +1,45 @@
+version: '3.8'
+
+services:
+  uno:
+    build: ./uno
+    container_name: uno
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: adminpassword
+      POSTGRES_DB: mi_db  
+      POSTGRES_REPLICATION_USER: replicator
+      POSTGRES_REPLICATION_PASSWORD: replicatorpassword
+    ports:
+      - "5432:5432"
+    networks:
+      - db_network
+    volumes:
+      - db_data_uno:/var/lib/postgresql/data
+
+  dos:
+    build: ./dos
+    container_name: dos
+    environment:
+      POSTGRES_USER: admin
+      POSTGRES_PASSWORD: adminpassword
+      POSTGRES_DB: mi_db
+      POSTGRES_REPLICATION_USER: replicator
+      POSTGRES_REPLICATION_PASSWORD: replicatorpassword
+      POSTGRES_MASTER_HOST: uno
+    ports:
+      - "5435:5432"
+    networks:
+      - db_network
+    volumes:
+      - db_data_dos:/var/lib/postgresql/data
+    depends_on:
+      - uno
+
+networks:
+  db_network:
+    driver: bridge
+
+volumes:
+  db_data_uno:
+  db_data_dos:
