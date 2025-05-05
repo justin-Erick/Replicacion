@@ -41,6 +41,26 @@ hot_standby = on
 ```conf
 docker-compose up -d --build
 ```
+### ¡IMPORTANTE!
+Verificar que los contenedores se encuentren en la red 172.25.0.0
+```conf
+docker network inspect replicacion-main_db_network
+```
+si no se encuentran alli, desconectamos los contenederos
+```conf
+docker network disconnect replicacion-main_db_network dos
+docker network disconnect replicacion-main_db_network uno
+```
+Creamos una red nueva
+```conf
+docker network create --subnet=172.25.0.0/16 replicacion-custom-network
+```
+nos conectamos nuevamente
+```conf
+docker network connect replicacion-custom-network dos
+docker network connect replicacion-custom-network uno
+```
+
 
 ### 2️⃣ Configurar la replicación
 🔹 En el Primary (uno)
