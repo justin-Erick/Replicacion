@@ -1,0 +1,1020 @@
+2025-05-05 10:07:57,887 - ERROR - Error conectando a BD (intento 1/3): could not translate host name "uno" to address: Host desconocido. 
+
+2025-05-05 10:08:10,609 - ERROR - Error conectando a BD (intento 2/3): could not translate host name "uno" to address: Host desconocido. 
+
+2025-05-05 10:08:23,303 - ERROR - Error conectando a BD (intento 3/3): could not translate host name "uno" to address: Host desconocido. 
+
+2025-05-05 10:09:48,519 - ERROR - Error conectando a BD (intento 1/3): could not translate host name "uno" to address: Host desconocido. 
+
+2025-05-05 10:10:01,208 - ERROR - Error conectando a BD (intento 2/3): could not translate host name "uno" to address: Host desconocido. 
+
+2025-05-05 10:10:13,921 - ERROR - Error conectando a BD (intento 3/3): could not translate host name "uno" to address: Host desconocido. 
+
+2025-05-05 10:10:29,036 - INFO - Conexión a BD exitosa
+2025-05-05 10:10:29,037 - INFO - Procesando métrica: DemaReal (Sistema)
+2025-05-05 10:10:30,355 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:30,355 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-01-01 00:00:00 a 2020-02-01 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:31,137 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:31,137 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-02-02 00:00:00 a 2020-03-04 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:31,863 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:31,863 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-03-05 00:00:00 a 2020-04-05 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:32,686 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:32,686 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-04-06 00:00:00 a 2020-05-07 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:33,403 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:33,403 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-05-08 00:00:00 a 2020-06-08 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:34,154 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:34,154 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-06-09 00:00:00 a 2020-07-10 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:34,937 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:34,937 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-07-11 00:00:00 a 2020-08-11 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:35,698 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:35,698 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-08-12 00:00:00 a 2020-09-12 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:36,519 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:36,519 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-09-13 00:00:00 a 2020-10-14 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:37,267 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:37,267 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-10-15 00:00:00 a 2020-11-15 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:38,081 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:38,087 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-11-16 00:00:00 a 2020-12-17 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:38,882 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:38,883 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-12-18 00:00:00 a 2021-01-18 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:39,681 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:39,681 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-01-19 00:00:00 a 2021-02-19 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:40,408 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:40,409 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-02-20 00:00:00 a 2021-03-23 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:41,235 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:41,237 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-03-24 00:00:00 a 2021-04-24 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:42,081 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:42,081 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-04-25 00:00:00 a 2021-05-26 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:42,840 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:42,840 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-05-27 00:00:00 a 2021-06-27 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:43,638 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:43,639 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-06-28 00:00:00 a 2021-07-29 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:44,438 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:44,438 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-07-30 00:00:00 a 2021-08-30 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:45,408 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:45,408 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-08-31 00:00:00 a 2021-10-01 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:46,245 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:46,245 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-10-02 00:00:00 a 2021-11-02 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:46,990 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:46,990 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-11-03 00:00:00 a 2021-12-04 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:47,783 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:47,810 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-12-05 00:00:00 a 2022-01-05 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:48,550 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:48,551 - ERROR - Error procesando DemaReal-Sistema para fechas 2022-01-06 00:00:00 a 2022-02-06 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:10:49,363 - INFO - Proceso finalizado
+2025-05-05 10:11:06,354 - INFO - Conexión a BD exitosa
+2025-05-05 10:11:06,356 - INFO - Procesando métrica: DemaReal (Sistema)
+2025-05-05 10:11:06,758 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:06,759 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-01-01 00:00:00 a 2020-02-01 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:06,919 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:06,920 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-02-02 00:00:00 a 2020-03-04 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:07,077 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:07,078 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-03-05 00:00:00 a 2020-04-05 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:07,236 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:07,236 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-04-06 00:00:00 a 2020-05-07 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:07,392 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:07,392 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-05-08 00:00:00 a 2020-06-08 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:07,548 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:07,548 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-06-09 00:00:00 a 2020-07-10 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:07,702 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:07,702 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-07-11 00:00:00 a 2020-08-11 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:07,857 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:07,857 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-08-12 00:00:00 a 2020-09-12 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:08,025 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:08,026 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-09-13 00:00:00 a 2020-10-14 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:08,189 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:08,189 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-10-15 00:00:00 a 2020-11-15 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:08,354 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:08,355 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-11-16 00:00:00 a 2020-12-17 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:08,523 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:08,523 - ERROR - Error procesando DemaReal-Sistema para fechas 2020-12-18 00:00:00 a 2021-01-18 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:08,677 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:08,678 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-01-19 00:00:00 a 2021-02-19 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:08,839 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:08,839 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-02-20 00:00:00 a 2021-03-23 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:08,987 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:08,987 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-03-24 00:00:00 a 2021-04-24 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:09,160 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:09,160 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-04-25 00:00:00 a 2021-05-26 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:09,318 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:09,319 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-05-27 00:00:00 a 2021-06-27 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:09,496 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:09,500 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-06-28 00:00:00 a 2021-07-29 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:09,681 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:09,681 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-07-30 00:00:00 a 2021-08-30 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:09,859 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:09,859 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-08-31 00:00:00 a 2021-10-01 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:10,021 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:10,021 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-10-02 00:00:00 a 2021-11-02 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:10,188 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:10,189 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-11-03 00:00:00 a 2021-12-04 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:10,353 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:10,354 - ERROR - Error procesando DemaReal-Sistema para fechas 2021-12-05 00:00:00 a 2022-01-05 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:10,535 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:10,537 - ERROR - Error procesando DemaReal-Sistema para fechas 2022-01-06 00:00:00 a 2022-02-06 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:10,695 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:10,695 - ERROR - Error procesando DemaReal-Sistema para fechas 2022-02-07 00:00:00 a 2022-03-10 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:11,577 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:11,577 - ERROR - Error procesando DemaReal-Sistema para fechas 2022-03-11 00:00:00 a 2022-04-11 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:12,475 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:12,475 - ERROR - Error procesando DemaReal-Sistema para fechas 2022-04-12 00:00:00 a 2022-05-13 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:13,291 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:13,291 - ERROR - Error procesando DemaReal-Sistema para fechas 2022-05-14 00:00:00 a 2022-06-14 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:14,326 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:14,327 - ERROR - Error procesando DemaReal-Sistema para fechas 2022-06-15 00:00:00 a 2022-07-16 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:15,290 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:15,291 - ERROR - Error procesando DemaReal-Sistema para fechas 2022-07-17 00:00:00 a 2022-08-17 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:16,150 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:16,151 - ERROR - Error procesando DemaReal-Sistema para fechas 2022-08-18 00:00:00 a 2022-09-18 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:16,994 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:16,994 - ERROR - Error procesando DemaReal-Sistema para fechas 2022-09-19 00:00:00 a 2022-10-20 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:17,876 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:17,877 - ERROR - Error procesando DemaReal-Sistema para fechas 2022-10-21 00:00:00 a 2022-11-21 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:18,711 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:18,711 - ERROR - Error procesando DemaReal-Sistema para fechas 2022-11-22 00:00:00 a 2022-12-23 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:19,687 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:19,687 - ERROR - Error procesando DemaReal-Sistema para fechas 2022-12-24 00:00:00 a 2023-01-24 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:20,531 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:20,532 - ERROR - Error procesando DemaReal-Sistema para fechas 2023-01-25 00:00:00 a 2023-02-25 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:21,423 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:21,423 - ERROR - Error procesando DemaReal-Sistema para fechas 2023-02-26 00:00:00 a 2023-03-29 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:22,314 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:22,314 - ERROR - Error procesando DemaReal-Sistema para fechas 2023-03-30 00:00:00 a 2023-04-30 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:23,292 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:23,293 - ERROR - Error procesando DemaReal-Sistema para fechas 2023-05-01 00:00:00 a 2023-06-01 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:24,250 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:24,252 - ERROR - Error procesando DemaReal-Sistema para fechas 2023-06-02 00:00:00 a 2023-07-03 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:25,217 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:25,217 - ERROR - Error procesando DemaReal-Sistema para fechas 2023-07-04 00:00:00 a 2023-08-04 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:26,203 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:26,204 - ERROR - Error procesando DemaReal-Sistema para fechas 2023-08-05 00:00:00 a 2023-09-05 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:27,157 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:27,158 - ERROR - Error procesando DemaReal-Sistema para fechas 2023-09-06 00:00:00 a 2023-10-07 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:28,150 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:28,151 - ERROR - Error procesando DemaReal-Sistema para fechas 2023-10-08 00:00:00 a 2023-11-08 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:29,162 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:29,162 - ERROR - Error procesando DemaReal-Sistema para fechas 2023-11-09 00:00:00 a 2023-12-10 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:30,141 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:30,141 - ERROR - Error procesando DemaReal-Sistema para fechas 2023-12-11 00:00:00 a 2024-01-11 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:30,648 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:30,649 - ERROR - Error procesando DemaReal-Sistema para fechas 2024-01-12 00:00:00 a 2024-02-12 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:31,174 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:31,175 - ERROR - Error procesando DemaReal-Sistema para fechas 2024-02-13 00:00:00 a 2024-03-15 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:31,735 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:31,735 - ERROR - Error procesando DemaReal-Sistema para fechas 2024-03-16 00:00:00 a 2024-04-16 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:32,264 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:32,265 - ERROR - Error procesando DemaReal-Sistema para fechas 2024-04-17 00:00:00 a 2024-05-18 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:32,831 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:32,831 - ERROR - Error procesando DemaReal-Sistema para fechas 2024-05-19 00:00:00 a 2024-06-19 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:33,381 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:33,382 - ERROR - Error procesando DemaReal-Sistema para fechas 2024-06-20 00:00:00 a 2024-07-21 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:33,934 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:33,935 - ERROR - Error procesando DemaReal-Sistema para fechas 2024-07-22 00:00:00 a 2024-08-22 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:34,494 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:34,494 - ERROR - Error procesando DemaReal-Sistema para fechas 2024-08-23 00:00:00 a 2024-09-23 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:35,066 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:35,067 - ERROR - Error procesando DemaReal-Sistema para fechas 2024-09-24 00:00:00 a 2024-10-25 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:35,636 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:35,636 - ERROR - Error procesando DemaReal-Sistema para fechas 2024-10-26 00:00:00 a 2024-11-26 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:36,200 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:36,201 - ERROR - Error procesando DemaReal-Sistema para fechas 2024-11-27 00:00:00 a 2024-12-28 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:36,359 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:36,359 - ERROR - Error procesando DemaReal-Sistema para fechas 2024-12-29 00:00:00 a 2024-12-31 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:36,361 - INFO - Procesando métrica: DemaReal (Agente)
+2025-05-05 10:11:36,419 - WARNING - No se encontraron códigos para Filtro='comercializador', Tipo='Agente'
+2025-05-05 10:11:39,001 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:39,001 - ERROR - Error procesando DemaReal-Agente para fechas 2020-01-01 00:00:00 a 2020-02-01 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:41,488 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:41,489 - ERROR - Error procesando DemaReal-Agente para fechas 2020-02-02 00:00:00 a 2020-03-04 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:44,431 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:44,432 - ERROR - Error procesando DemaReal-Agente para fechas 2020-03-05 00:00:00 a 2020-04-05 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:47,421 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:47,422 - ERROR - Error procesando DemaReal-Agente para fechas 2020-04-06 00:00:00 a 2020-05-07 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:51,377 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:51,378 - ERROR - Error procesando DemaReal-Agente para fechas 2020-05-08 00:00:00 a 2020-06-08 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:54,138 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:54,139 - ERROR - Error procesando DemaReal-Agente para fechas 2020-06-09 00:00:00 a 2020-07-10 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:57,417 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:11:57,417 - ERROR - Error procesando DemaReal-Agente para fechas 2020-07-11 00:00:00 a 2020-08-11 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:00,236 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:00,236 - ERROR - Error procesando DemaReal-Agente para fechas 2020-08-12 00:00:00 a 2020-09-12 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:03,671 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:03,671 - ERROR - Error procesando DemaReal-Agente para fechas 2020-09-13 00:00:00 a 2020-10-14 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:07,004 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:07,005 - ERROR - Error procesando DemaReal-Agente para fechas 2020-10-15 00:00:00 a 2020-11-15 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:10,822 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:10,823 - ERROR - Error procesando DemaReal-Agente para fechas 2020-11-16 00:00:00 a 2020-12-17 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:15,271 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:15,271 - ERROR - Error procesando DemaReal-Agente para fechas 2020-12-18 00:00:00 a 2021-01-18 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:18,599 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:18,599 - ERROR - Error procesando DemaReal-Agente para fechas 2021-01-19 00:00:00 a 2021-02-19 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:22,523 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:22,525 - ERROR - Error procesando DemaReal-Agente para fechas 2021-02-20 00:00:00 a 2021-03-23 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:25,035 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:25,035 - ERROR - Error procesando DemaReal-Agente para fechas 2021-03-24 00:00:00 a 2021-04-24 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:28,562 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:28,563 - ERROR - Error procesando DemaReal-Agente para fechas 2021-04-25 00:00:00 a 2021-05-26 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:32,102 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:32,102 - ERROR - Error procesando DemaReal-Agente para fechas 2021-05-27 00:00:00 a 2021-06-27 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:35,265 - ERROR - Error en BD: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:35,265 - ERROR - Error procesando DemaReal-Agente para fechas 2021-06-28 00:00:00 a 2021-07-29 00:00:00: function insertar_datos_api(jsonb) does not exist
+LINE 1: SELECT insertar_datos_api('{"Metric": {"Id": "DemaReal", "Me...
+               ^
+HINT:  No function matches the given name and argument types. You might need to add explicit type casts.
+
+2025-05-05 10:12:36,882 - INFO - Proceso finalizado
