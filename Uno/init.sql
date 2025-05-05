@@ -1,9 +1,8 @@
 ----------------------------
--- 1. Eliminar tablas existentes (para reinicios)
+-- 1. Eliminar tablas existentes
 ----------------------------
 DROP TABLE IF EXISTS DatosHora CASCADE;
 DROP TABLE IF EXISTS DatosDiarios CASCADE;
-DROP TABLE IF EXISTS DatosMensuales CASCADE;
 DROP TABLE IF EXISTS Metrica CASCADE;
 DROP TABLE IF EXISTS Entidad CASCADE;
 DROP TYPE IF EXISTS entidad_tipo CASCADE;
@@ -11,49 +10,51 @@ DROP TYPE IF EXISTS categoria_metrica CASCADE;
 DROP TYPE IF EXISTS frecuencia_tipo CASCADE;
 
 ----------------------------
--- 2. Crear tipos personalizados
+-- 2. Tipos personalizados (ampliados)
 ----------------------------
 CREATE TYPE entidad_tipo AS ENUM (
     'Sistema', 'Agente', 'Recurso', 'CIIU', 'Embalse', 'Rio', 
-    'Area', 'Subarea', 'MercadoComercializacion', 'RecursoComb'
+    'Area', 'Subarea', 'MercadoComercializacion', 'RecursoComb', 'Enlace', 'Combustible'
 );
 
 CREATE TYPE categoria_metrica AS ENUM (
     'Demanda', 'Generación', 'Precios', 'Pérdidas', 'Sostenibilidad', 
-    'Transacciones', 'Disponibilidad', 'Emisiones', 'Hidrología'
+    'Transacciones', 'Disponibilidad', 'Emisiones', 'Hidrología', 'Mercado'
 );
 
 CREATE TYPE frecuencia_tipo AS ENUM ('Hourly', 'Daily', 'Monthly', 'Lists');
 
 ----------------------------
--- 3. Crear tablas principales
+-- 3. Tablas principales (optimizadas)
 ----------------------------
 CREATE TABLE Entidad (
     EntidadID SERIAL PRIMARY KEY,
-    Codigo VARCHAR(100) NOT NULL,  -- Ampliado para nombres largos
-    Nombre VARCHAR(200),
+    Codigo VARCHAR(200) NOT NULL,
+    Nombre VARCHAR(300),
     Tipo entidad_tipo NOT NULL,
-    Filtro VARCHAR(100) DEFAULT 'No aplica',
+    Filtro VARCHAR(150) DEFAULT 'No aplica',
     UNIQUE (Codigo, Tipo)
 );
 
 CREATE TABLE Metrica (
     MetricaID SERIAL PRIMARY KEY,
-    MetricKey VARCHAR(50) NOT NULL UNIQUE,
-    Nombre VARCHAR(150) NOT NULL,
+    MetricKey VARCHAR(100) NOT NULL,
+    Nombre VARCHAR(300) NOT NULL,
     Categoria categoria_metrica NOT NULL,
-    Unidad VARCHAR(20) NOT NULL,
-    Url VARCHAR(255) NOT NULL,
-    Filtro VARCHAR(100),
+    Unidad VARCHAR(50) NOT NULL,
+    Url VARCHAR(300) NOT NULL,
+    Filtro VARCHAR(150),
     Descripcion TEXT,
-    Frecuencia frecuencia_tipo NOT NULL  -- Nueva columna para frecuencia
+    Frecuencia frecuencia_tipo NOT NULL,
+    EntidadTipo entidad_tipo NOT NULL,
+    UNIQUE (MetricKey, EntidadTipo)
 );
 
 CREATE TABLE DatosHora (
     DatoID BIGSERIAL,
     MetricaID INT NOT NULL,
     EntidadID INT NOT NULL,
-    Fecha TIMESTAMP NOT NULL,  -- Cambiado a TIMESTAMP para precisión horaria
+    Fecha TIMESTAMP NOT NULL,
     Valores JSONB NOT NULL,
     PRIMARY KEY (DatoID, Fecha),
     FOREIGN KEY (MetricaID) REFERENCES Metrica(MetricaID),
@@ -72,116 +73,29 @@ CREATE TABLE DatosDiarios (
 ) PARTITION BY RANGE (Fecha);
 
 ----------------------------
--- 4. Función para crear particiones automáticas
+-- 4. Crear particiones (incluidas particiones para datos futuros)
 ----------------------------
-CREATE OR REPLACE FUNCTION crear_particiones_anuales()
-RETURNS TRIGGER AS $$
-DECLARE
-    tabla_base TEXT := TG_ARGV[0];
-    anio_actual INT := EXTRACT(YEAR FROM CURRENT_DATE);
-BEGIN
-    FOR i IN 0..3 LOOP  -- Crea particiones para los próximos 3 años
-        EXECUTE format(
-            'CREATE TABLE IF NOT EXISTS %s_%s PARTITION OF %s ' ||
-            'FOR VALUES FROM (''%s-01-01'') TO (''%s-01-01'')',
-            tabla_base, anio_actual + i, tabla_base, anio_actual + i, anio_actual + i + 1
-        );
-    END LOOP;
-    RETURN NULL;
-END;
-$$ LANGUAGE plpgsql;
+-- Particiones para DatosHora
+CREATE TABLE datoshora_2020 PARTITION OF DatosHora FOR VALUES FROM ('2020-01-01') TO ('2021-01-01');
+CREATE TABLE datoshora_2021 PARTITION OF DatosHora FOR VALUES FROM ('2021-01-01') TO ('2022-01-01');
+CREATE TABLE datoshora_2022 PARTITION OF DatosHora FOR VALUES FROM ('2022-01-01') TO ('2023-01-01');
+CREATE TABLE datoshora_2023 PARTITION OF DatosHora FOR VALUES FROM ('2023-01-01') TO ('2024-01-01');
+CREATE TABLE datoshora_2024 PARTITION OF DatosHora FOR VALUES FROM ('2024-01-01') TO ('2025-01-01');
+CREATE TABLE datoshora_2025 PARTITION OF DatosHora FOR VALUES FROM ('2025-01-01') TO ('2026-01-01');
+CREATE TABLE datoshora_futuro PARTITION OF DatosHora FOR VALUES FROM ('2026-01-01') TO (MAXVALUE);
 
--- Triggers para creación automática de particiones
-CREATE TRIGGER trig_particiones_datos_hora
-AFTER INSERT ON DatosHora
-FOR EACH STATEMENT EXECUTE FUNCTION crear_particiones_anuales('datoshora');
-
-CREATE TRIGGER trig_particiones_datos_diarios
-AFTER INSERT ON DatosDiarios
-FOR EACH STATEMENT EXECUTE FUNCTION crear_particiones_anuales('datosdiarios');
+-- Particiones para DatosDiarios
+CREATE TABLE datosdiarios_2020 PARTITION OF DatosDiarios FOR VALUES FROM ('2020-01-01') TO ('2021-01-01');
+CREATE TABLE datosdiarios_2021 PARTITION OF DatosDiarios FOR VALUES FROM ('2021-01-01') TO ('2022-01-01');
+CREATE TABLE datosdiarios_2022 PARTITION OF DatosDiarios FOR VALUES FROM ('2022-01-01') TO ('2023-01-01');
+CREATE TABLE datosdiarios_2023 PARTITION OF DatosDiarios FOR VALUES FROM ('2023-01-01') TO ('2024-01-01');
+CREATE TABLE datosdiarios_2024 PARTITION OF DatosDiarios FOR VALUES FROM ('2024-01-01') TO ('2025-01-01');
+CREATE TABLE datosdiarios_2025 PARTITION OF DatosDiarios FOR VALUES FROM ('2025-01-01') TO ('2026-01-01');
+CREATE TABLE datosdiarios_futuro PARTITION OF DatosDiarios FOR VALUES FROM ('2026-01-01') TO (MAXVALUE);
 
 ----------------------------
--- 5. Función de inserción de datos mejorada
+-- 7. Optimización
 ----------------------------
-CREATE OR REPLACE FUNCTION insertar_datos_api(json_data JSONB)
-RETURNS VOID AS $$
-DECLARE
-    metric_key TEXT;
-    entity_type entidad_tipo;
-    entity_code TEXT;
-    fecha DATE;
-    frecuencia frecuencia_tipo;
-    filtro TEXT;
-    entidad_values JSONB;
-BEGIN
-    -- Extraer metadatos
-    metric_key := json_data->'Metric'->>'Id';
-    frecuencia := (json_data->>'TipoFrecuencia')::frecuencia_tipo;
-    entidad_values := json_data->'Items'->0->'Entities'->0->'Values';
-    fecha := (json_data->'Items'->0->>'Date')::DATE;
-    filtro := COALESCE(json_data->'Metric'->>'Filter', 'No aplica');
-
-    -- Determinar tipo de entidad y código dinámicamente
-    entity_type := (json_data->'Items'->0->'Entities'->0->>'Id')::entidad_tipo;
-    
-    entity_code := CASE
-        WHEN entity_type = 'Embalse' THEN entidad_values->>'Nombre Embalse'
-        WHEN entity_type = 'Agente' THEN entidad_values->>'Codigo Agente'
-        WHEN entity_type = 'Recurso' THEN entidad_values->>'Codigo Submercado Generación'
-        ELSE entidad_values->>'code'
-    END;
-
-    -- Validar existencia de métrica
-    IF NOT EXISTS (SELECT 1 FROM Metrica WHERE MetricKey = metric_key) THEN
-        RAISE EXCEPTION 'Métrica "%" no registrada en el sistema', metric_key;
-    END IF;
-
-    -- Insertar/actualizar entidad
-    INSERT INTO Entidad (Codigo, Tipo, Filtro, Nombre)
-    VALUES (entity_code, entity_type, filtro, entity_code)
-    ON CONFLICT (Codigo, Tipo) 
-    DO UPDATE SET Filtro = EXCLUDED.Filtro;
-
-    -- Insertar en tabla correspondiente según frecuencia
-    CASE frecuencia
-        WHEN 'Hourly' THEN
-            INSERT INTO DatosHora (MetricaID, EntidadID, Fecha, Valores)
-            SELECT m.MetricaID, e.EntidadID, fecha, entidad_values
-            FROM Metrica m
-            JOIN Entidad e USING (Codigo, Tipo)
-            WHERE m.MetricKey = metric_key;
-
-        WHEN 'Daily' THEN
-            INSERT INTO DatosDiarios (MetricaID, EntidadID, Fecha, Valores)
-            SELECT m.MetricaID, e.EntidadID, fecha, entidad_values
-            FROM Metrica m
-            JOIN Entidad e USING (Codigo, Tipo)
-            WHERE m.MetricKey = metric_key;
-
-        ELSE
-            RAISE NOTICE 'Frecuencia "%" no implementada', frecuencia;
-    END CASE;
-
-EXCEPTION WHEN others THEN
-    RAISE NOTICE 'Error insertando datos: %', SQLERRM;
-END;
-$$ LANGUAGE plpgsql;
-
-----------------------------
--- 6. Cargar datos iniciales desde Excel
-----------------------------
--- Ejemplo para métrica de Generación
-INSERT INTO Metrica (MetricKey, Nombre, Categoria, Unidad, Url, Frecuencia) VALUES
-('Gene', 'Generación por Sistema', 'Generación', 'kWh', 'http://servapibi.xm.com.co/hourly', 'Hourly'),
-('ENFICC', 'Energía Firme', 'Sostenibilidad', 'kWh', 'http://servapibi.xm.com.co/daily', 'Daily');
-
--- Ejemplo de entidad
-INSERT INTO Entidad (Codigo, Tipo, Nombre) VALUES
-('SIN', 'Sistema', 'Sistema Interconectado Nacional'),
-('EMB01', 'Embalse', 'Embalse Hidroeléctrico Principal');
-
-----------------------------
--- 7. Optimización final
-----------------------------
-CREATE INDEX idx_entidad_dinamico ON Entidad USING GIN (to_tsvector('spanish', Codigo || ' ' || Nombre));
+CREATE INDEX idx_datos_hora ON DatosHora USING BRIN (Fecha);
+CREATE INDEX idx_datos_diarios ON DatosDiarios USING BRIN (Fecha);
 VACUUM ANALYZE;
